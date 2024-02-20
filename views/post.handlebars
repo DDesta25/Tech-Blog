@@ -1,0 +1,27 @@
+<div class="text-center">
+  <h2>{{title}}</h2>
+  <p>{{{get_emoji}}}</p>
+  <p>{{contents}}</p>
+  <p>Created by {{user.username}} on {{format_date date_created}}</p>
+
+  <form>
+    <input type="text" placeholder="Enter your comment here">
+    <button type="submit" class="btn btn-primary">Comment!</button>
+</form>
+{{#each comments as |comment| }}
+  <p>
+      {{comment.comment}}
+    </p>
+<p>Created by {{comment.user.username}} on {{format_date comment.date_created}}</p>
+{{/each}}
+</div>
+
+<script src="script.js"></script>
+
+
+
+
+
+  {{!-- <p>
+    <button class="btn btn-primary">Comment!</button>
+  </p> --}}

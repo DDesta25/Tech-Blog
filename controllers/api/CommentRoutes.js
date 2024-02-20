@@ -1,10 +1,10 @@
 const express = require('express');
 const router = express.Router();
-const { Comment } = require('../models');
+const { Comment } = require('../../models');
 
 
 // Get all comments
-router.get('/comments', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
       const comments = await Comment.findAll();
       res.json(comments);
@@ -15,7 +15,7 @@ router.get('/comments', async (req, res) => {
   });
   
   // Get a specific comment by ID
-  router.get('/comments/:id', async (req, res) => {
+  router.get('/:id', async (req, res) => {
     try {
       const comment = await Comment.findByPk(req.params.id);
       if (!comment) {
@@ -29,7 +29,7 @@ router.get('/comments', async (req, res) => {
   });
   
   // Create a new comment
-  router.post('/comments', async (req, res) => {
+  router.post('/', async (req, res) => {
     try {
       const newComment = await Comment.create(req.body);
       res.status(201).json(newComment);
@@ -40,7 +40,7 @@ router.get('/comments', async (req, res) => {
   });
   
   // Update a comment
-  router.put('/comments/:id', async (req, res) => {
+  router.put('/:id', async (req, res) => {
     try {
       const comment = await Comment.findByPk(req.params.id);
       if (!comment) {
@@ -55,7 +55,7 @@ router.get('/comments', async (req, res) => {
   });
   
   // Delete a comment
-  router.delete('/comments/:id', async (req, res) => {
+  router.delete('/:id', async (req, res) => {
     try {
       const comment = await Comment.findByPk(req.params.id);
       if (!comment) {
