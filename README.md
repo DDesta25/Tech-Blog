@@ -23,8 +23,6 @@
   
 npm i all dependencies 
 
-## Screen Recording
-
 
 ## Screenshots
 ![alt text](image.png)
@@ -40,9 +38,6 @@ This application is used to create a CMS-style blog site similar to a Wordpress 
   
   
   
-  ## Credits
-  
-  
   
   ## License
   
@@ -50,14 +45,15 @@ A short and simple permissive license with conditions only requiring preservatio
   [https://choosealicense.com/licenses/mit/](https://choosealicense.com/licenses/mit/)
 
   
-  ## How to Contribute
+  ## Contribute
   Daniel Desta
 
+
+## Gmail
 tekoladaniel@gmail.com
 
 ## Github
-
-DDesta25
+(https://github.com/DDesta25/Tech-Blog)
 
   
   
